@@ -7,9 +7,11 @@ p "Hello3", 1
 
 # 文字列結合
 puts "Hello4" + "world"
-# 変数展開(シングルクォートではダメ)
+
+# 変数
 test_str = "Hello5"
 test_num = 1
+# 変数展開(シングルクォートではダメ)
 puts "#{test_str}です"
 
 #数値と文字の結合です
@@ -18,6 +20,14 @@ puts "#{test_num}です"
 
 # 定数はアルファベット大文字[A-Z]で始まる変数
 CONST1 = "const hello"
+
+
+# 関数(メソッド)
+def hello_world(arg)
+    puts "#{arg}が引数に渡されました"
+end
+
+hello_world("test")
 
 # class
 class Hello
